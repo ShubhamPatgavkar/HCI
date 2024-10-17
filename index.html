@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="brand">Human Computer Interaction</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#assignments">Assignments</a></li>
+            <li><a href="pdfs/HCI_prototype.pdf" target="_blank">Prototype</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="overlay">
+            <h2>Welcome to Our HCI Portfolio</h2>
+            <p>Explore all the assignments we have created for the HCI course.</p>
+        </div>
+    </section>
+
+    <!-- Assignments Section -->
+    <section id="assignments" class="section assignments">
+        <h2>Dive into Our Assignments and Uncover Insights</h2>
+        <div class="assignment-grid">
+            <!-- Assignment 1 -->
+            <div class="assignment-card" onclick="window.open('pdfs/Chat_AppPersona.pdf', '_blank')">
+                <div class="assignment-content">
+                    <h3>User Personas</h3>
+                </div>
+            </div>
+
+            <!-- Assignment 2 -->
+            <div class="assignment-card" onclick="window.open('pdfs/User_Journey_Map_and_scenario.pdf', '_blank')">
+                <div class="assignment-content">
+                    <h3>User Journey Maps</h3>
+                </div>
+            </div>
+
+            <!-- Assignment 3 -->
+            <div class="assignment-card" onclick="window.open('pdfs/HCI_Card_Sorting.pdf', '_blank')">
+                <div class="assignment-content">
+                    <h3>Card Sorting</h3>
+                </div>
+            </div>
+
+            <!-- Assignment 4 -->
+            <div class="assignment-card" onclick="window.open('pdfs/Low_Fidelity_Design.pdf', '_blank')">
+                <div class="assignment-content">
+                    <h3>Low Fidelity Design</h3>
+                </div>
+            </div>
+
+            <!-- Assignment 5 -->
+            <div class="assignment-card"
+                onclick="window.open('pdfs/Cognitive_Walkthrough_for_ChatApp_with_Sentiment_Analysis.pdf', '_blank')">
+                <div class="assignment-content">
+                    <h3>Cognitive Walkthrough</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Members Section -->
+    <section id="group-members" class="section group-members">
+        <h2>Our Team</h2>
+        <div class="member-info">
+            <p><strong>Name:</strong> Shubham Patgavkar</p>
+            <p><strong>Roll Number:</strong> 333072</p>
+            <p><strong>PRN Number:</strong> 22320100</p>
+        </div>
+        <div class="member-info">
+            <p><strong>Name:</strong> Vedant Kokate</p>
+            <p><strong>Roll Number:</strong> 333027</p>
+            <p><strong>PRN Number:</strong> 22211513</p>
+        </div>
+        <div class="member-info">
+            <p><strong>Name:</strong> Yogesh Kunde</p>
+            <p><strong>Roll Number:</strong> 333031</p>
+            <p><strong>PRN Number:</strong> 22210428</p>
+        </div>
+    </section>
+
+    <script>
+        // Add click functionality to each card
+        const cards = document.querySelectorAll('.assignment-card');
+        cards.forEach(card => {
+            card.style.cursor = 'pointer'; // Change cursor to pointer for better UX
+        });
+    </script>
+
+</body>
+
+</html>
